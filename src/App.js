@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Route, Switch} from "react-router-dom"
 import NavBar from './NavBar';
 import Home from './Home';
@@ -11,11 +11,16 @@ import Header from './Header';
 
 
 function App() {
+// const[foodMenu, setFoodMenu] = useState([])
 
-// const[foodMenu, setFoodMenu]= useState([])
 // useEffect(()=>{
-//   fetch()
-// })
+//   fetch("http://localhost:3000/Menu")
+//   .then((resp)=> resp.json())
+//   .then((data)=>{
+//     console.log(data)
+//   })
+// },[])
+
   return (
     <div>
     <Header/> 

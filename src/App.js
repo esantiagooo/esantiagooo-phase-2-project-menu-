@@ -10,16 +10,8 @@ import Header from './Header';
 
 
 
-function App() {
-// const[foodMenu, setFoodMenu] = useState([])
 
-// useEffect(()=>{
-//   fetch("http://localhost:3000/Menu")
-//   .then((resp)=> resp.json())
-//   .then((data)=>{
-//     console.log(data)
-//   })
-// },[])
+function App() {
 
   return (
     <div>

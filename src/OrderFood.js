@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from "react";
-// import MenuCard from "./MenuCard";
+import Filter from "./MenuCard";
 
 function OrderFood(){
     const[menu, setMenu] = useState([])
@@ -41,11 +41,7 @@ useEffect(()=>{
                           </div>
                       )
                   })}
-                  
-                  
-                  
                   </div>
-                  
                   ))}</ul>  
                 </div>
         </div>

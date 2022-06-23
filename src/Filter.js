@@ -1,17 +1,17 @@
 import React from "react";
 
-// function MenuCard({menuData}){
-//     console.log(menuData)
-//     return(
-//         // <div className="card">
-//         //     <div className="card-title">{menuData.name}</div>
-//         //     <div className="card-body">
-//         //         <p>{menuData.description}</p>
-//         //         <p>{menuData.price}</p>
+function Filter({category, onCategoryChange}){
+    return (
+        <div className="Filter">
+        <label for ="menu">Choose a Dish </label>
+        <select name="filter" value={category} onChange={(e)=> onCategoryChange(e.target.value)}>
+            <option value= "All">Filter by category</option>
+            <option value ="Pizza">Pizza</option>
+            <option value="Quesadillas">Quesadillas</option>
+            <option value= "Tortas">Tortas</option>
+        </select>
+        </div>
+    )
+}
 
-//         //     </div>
-//         // </div>
-//     )
-// }
-
-// export default MenuCard
+export default Filter

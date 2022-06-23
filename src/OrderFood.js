@@ -1,8 +1,10 @@
 import React, { useEffect, useState} from "react";
-import Filter from "./MenuCard";
+import Filter from "./Filter";
 
 function OrderFood(){
+    const[filterBy, setFilterBy]= useState("All")
     const[menu, setMenu] = useState([])
+
 useEffect(()=>{
     fetch("http://localhost:3000/menu")
     .then((r)=> r.json())
@@ -10,11 +12,23 @@ useEffect(()=>{
     .catch(err => console.log('hi'))
 },[])
 
+function handleFilterBy(category){
+    setFilterBy(category)
+}
+ const itemsDisplay = menu.filter((item)=>{
+     if(filterBy === "All"){
+         return true
+     }else{
+         return item.category === filterBy
+     }
+ })
+
     return(
         <div>
+            <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <h1>I will add something later</h1>
                 <div className="item-container">
-                  <ul>{menu.map((item, index) =>(
+                  <ul>{itemsDisplay.map((item, index) =>(
                   <div key={index}>
                   {item.Pizza.map((pizza, index)=>{
                       return (

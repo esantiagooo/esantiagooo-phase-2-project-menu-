@@ -15,22 +15,15 @@ useEffect(()=>{
 function handleFilterBy(category){
     setFilterBy(category)
 }
- const itemsDisplay = menu.filter((item)=>{
-     if(filterBy === "All"){
-         return true
-     }else{
-         return item.category === filterBy
-     }
- })
 
     return(
         <div>
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <h1>I will add something later</h1>
                 <div className="item-container">
-                  <ul>{itemsDisplay.map((item, index) =>(
+                  <ul>{menu.map((item, index) =>(
                   <div key={index}>
-                  {item.Pizza.map((pizza, index)=>{
+                  {(filterBy === 'All' || filterBy === "Pizza") && item.Pizza.map((pizza, index)=>{
                       return (
                           <div className= "card" key={index}>
                               <h2>{pizza.name}</h2>
@@ -39,7 +32,7 @@ function handleFilterBy(category){
                           </div>
                       )
                   })}
-                  {item.Quesadillas.map((quesadilla, index)=>{
+                  {(filterBy === "All" || filterBy === "Quesadillas") && item.Quesadillas.map((quesadilla, index)=>{
                       return (
                           <div className="card" key={index}>
                               <h2>{quesadilla.name}</h2>
@@ -47,7 +40,7 @@ function handleFilterBy(category){
                           </div>
                       )
                   })}
-                  {item.Tortas.map((torta, index)=>{
+                  {(filterBy === "All" || filterBy === "Tortas") && item.Tortas.map((torta, index)=>{
                       return (
                           <div className="card" key={index}>
                               <h2>{torta.name}</h2>

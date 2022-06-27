@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from "react";
 import Filter from "./Filter";
+import ItemForm from "./ItemForm";
 
 function OrderFood(){
     const[filterBy, setFilterBy]= useState("All")
@@ -16,9 +17,15 @@ function handleFilterBy(category){
     setFilterBy(category)
 }
 
+function handleAddItem(newProduct){
+    setMenu(...menu, newProduct )
+}
+
     return(
         <div>
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
+            <ItemForm onAddItem={handleAddItem} />
+            
             <h1>I will add something later</h1>
                 <div className="item-container">
                   <ul>{menu.map((item, index) =>(

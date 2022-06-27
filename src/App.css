@@ -4,6 +4,8 @@ h1{
 }
 .item-container{
   display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;

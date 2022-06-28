@@ -9,10 +9,19 @@ function ItemForm(){
         e.preventDefault()
         const itemInfo ={
             name: name,
+            price: price,
             category: category,
-            price: price
         }
-        console.log(itemInfo)
+        fetch("http://localhost:3000/Pizza",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(itemInfo)
+        })
+        .then((r)=> r.json())
+        .then((newItem)=> console.log(newItem))
     }
     return (
         <form className="NewItem" onSubmit={handleSubmit}>
@@ -24,9 +33,9 @@ function ItemForm(){
              <label  htmlFor="items name">Category:</label>
             <select name ="category" value={category} onChange={(e)=>setCategory(e.target.value)}>
                 <option value="Produce">Add by category</option>
-                <option value="Pizza">Pizza</option>
-                <option value="Quesadillas">Quesadillas</option>
-                <option value="Tortas">Tortas</option>
+                <option value="classic">Classic</option>
+                <option value="speciality">Speciality</option>
+                <option value="sweet">Sweet</option>
             </select>
 
             <button type="submit"> Add to menu</button>

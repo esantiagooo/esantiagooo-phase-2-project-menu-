@@ -6,9 +6,9 @@ function Filter({category, onCategoryChange}){
         <label htmlFor ="menu">Choose a Dish </label>
         <select name="filter" value={category} onChange={(e)=> onCategoryChange(e.target.value)}>
             <option value= "All">Filter by category</option>
-            <option value ="Pizza">Pizza</option>
-            <option value="Quesadillas">Quesadillas</option>
-            <option value= "Tortas">Tortas</option>
+            <option value ="classic">Classic</option>
+            <option value="speciality">Speciality</option>
+            <option value= "sweet">Sweet</option>
         </select>
         </div>
     )

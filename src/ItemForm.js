@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function ItemForm(){
     const [name, setName] = useState("")
+    const [description, setDescription] = useState("")
     const [price, setPrice] = useState("")
     const [category, setCategory] = useState("Product")
 
@@ -9,6 +10,7 @@ function ItemForm(){
         e.preventDefault()
         const itemInfo ={
             name: name,
+            description: description,
             price: price,
             category: category,
         }
@@ -27,7 +29,8 @@ function ItemForm(){
         <form className="NewItem" onSubmit={handleSubmit}>
             <label  htmlFor="items name">Item's name:</label>
             <input type="text" name ="name" value={name} onChange={(e)=>setName(e.target.value)}></input>
-
+            <label  htmlFor="items description">Description</label>
+            <input  type="text" name="description" value={description} onChange={(e)=>setDescription(e.target.value)} ></input>
             <label  htmlFor="items price">Item's price:</label>
             <input  type="text" name="price" value={price} onChange={(e)=>setPrice(e.target.value)} ></input>
              <label  htmlFor="items name">Category:</label>

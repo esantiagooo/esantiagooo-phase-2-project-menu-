@@ -1,113 +1,109 @@
 {
-   "Pizza" :[
-              {
-              "id": "0",
-              "name": "Cheese Pie",
-              "description": "Regular mozzarella cheese. Classic cheese or create your own pizza.",
-              "price": "$10.00",
-              "category": "classic"
-              },
-              {
-                "id": "1",
-                "name": "Pepperoni Pie",
-                "description": "Regular mozzarella cheese., topped with Pepperoni.",
-                "price": "$10.00",
-                "category": "classic"
-                },
-              {
-              "id": "2",
-              "name": "Vegetarian Pie",
-              "description": "Green peppers. Red peppers, spinach & broccoli.",
-              "price": "$14.00",
-              "category": "classic"
-              },
-              {
-              "id": "3",
-              "name": "Hawaiian Pie",
-              "description": "Ham, pineapple, extra cheese.",
-              "price": "$15.00",
-              "category": "classic"
-              },
-              {
-              "id": "4",
-              "name": "White Pie",
-              "description": "Mozzeralla, parmesan & ricotta.",
-              "price": "$15.00",
-              "category": "speciality"
-              },
-              {
-              "id": "5",
-              "name": "Buffalo Chicken Pie",
-              "description": "Grilled chicken, Buffalo sauce, ranch on top and mozzeralla.",
-              "price": "$15.00",
-              "category": "classic"
-              },
-              {
-              "id": "6",
-              "name": "BBQ Chicken Pie",
-              "description": "Grilled chicken, BBQ sauce and mozzeralla. ",
-              "price": "$15.00",
-              "category": "classic"
-              },
-              {
-              "id": "7",
-              "name": "La Del Tianguis",
-              "description": "White pizza, fresh mushrooms, onions, jalapenos, & epazote.",
-              "price": "$16.00",
-              "category": "speciality"
-              },
-              {
-              "id": "8",
-              "name": "La Chilanga Pie",
-              "description": "White pizza, juicy al pastor carne, cilantro & onions on top.",
-              "price": "$16.00",
-              "category": "speciality"
-              },
-              {
-              "id": "9",
-              "name": "Mexicana Pie",
-              "description": "Chorizo, pinto beans, jalapenos & onions.",
-              "price": "$16.00",
-              "category": "speciality"
-              },
-              {
-              "id": "10",
-              "name": "Meat Lover Pie",
-              "description": "Sausage, pepperoni & ham.",
-              "price": "$16.00",
-              "category": "classic"
-              },
-              {
-              "id": "11",
-              "name": "Meat & Veggie Pie",
-              "description": "Sausage, pepperoni, peppers & mushrooms.",
-              "price": "$15.00",
-              "category": "classic"
-              },
-              {
-              "id": "12",
-              "name": "Supreme Pie",
-              "description": "Pepperoni, sausage, peppers & onions.",
-              "price": "$15.00",
-              "category": "speciality"
-              },
-              {
-              "id": "13",
-              "name": "Baked Ziti Pie",
-              "description": "Zit, ricotta, & tomato sauce.",
-              "price": "$15.00",
-              "category": "speciality"
-              },
-              {
-              "id": "14",
-              "name": "Penne Vodka Pie",
-              "description": "White pizza & penne pasta in vodka sauce on top.",
-              "price": "$15.00",
-              "category": "speciality"
-              }
-          ]
-          
-    
-  
-}  
-  
+  "Pizza": [
+    {
+      "id": "0",
+      "name": "Cheese Pie",
+      "description": "Regular mozzarella cheese. Classic cheese or create your own pizza.",
+      "price": "$10.00",
+      "category": "classic"
+    },
+    {
+      "id": "1",
+      "name": "Pepperoni Pie",
+      "description": "Regular mozzarella cheese., topped with Pepperoni.",
+      "price": "$10.00",
+      "category": "classic"
+    },
+    {
+      "id": "2",
+      "name": "Vegetarian Pie",
+      "description": "Green peppers. Red peppers, spinach & broccoli.",
+      "price": "$14.00",
+      "category": "classic"
+    },
+    {
+      "id": "3",
+      "name": "Hawaiian Pie",
+      "description": "Ham, pineapple, extra cheese.",
+      "price": "$15.00",
+      "category": "classic"
+    },
+    {
+      "id": "4",
+      "name": "White Pie",
+      "description": "Mozzeralla, parmesan & ricotta.",
+      "price": "$15.00",
+      "category": "speciality"
+    },
+    {
+      "id": "5",
+      "name": "Buffalo Chicken Pie",
+      "description": "Grilled chicken, Buffalo sauce, ranch on top and mozzeralla.",
+      "price": "$15.00",
+      "category": "classic"
+    },
+    {
+      "id": "6",
+      "name": "BBQ Chicken Pie",
+      "description": "Grilled chicken, BBQ sauce and mozzeralla. ",
+      "price": "$15.00",
+      "category": "classic"
+    },
+    {
+      "id": "7",
+      "name": "La Del Tianguis",
+      "description": "White pizza, fresh mushrooms, onions, jalapenos, & epazote.",
+      "price": "$16.00",
+      "category": "speciality"
+    },
+    {
+      "id": "8",
+      "name": "La Chilanga Pie",
+      "description": "White pizza, juicy al pastor carne, cilantro & onions on top.",
+      "price": "$16.00",
+      "category": "speciality"
+    },
+    {
+      "id": "9",
+      "name": "Mexicana Pie",
+      "description": "Chorizo, pinto beans, jalapenos & onions.",
+      "price": "$16.00",
+      "category": "speciality"
+    },
+    {
+      "id": "10",
+      "name": "Meat Lover Pie",
+      "description": "Sausage, pepperoni & ham.",
+      "price": "$16.00",
+      "category": "classic"
+    },
+    {
+      "id": "11",
+      "name": "Meat & Veggie Pie",
+      "description": "Sausage, pepperoni, peppers & mushrooms.",
+      "price": "$15.00",
+      "category": "classic"
+    },
+    {
+      "id": "12",
+      "name": "Supreme Pie",
+      "description": "Pepperoni, sausage, peppers & onions.",
+      "price": "$15.00",
+      "category": "speciality"
+    },
+    {
+      "id": "13",
+      "name": "Baked Ziti Pie",
+      "description": "Zit, ricotta, & tomato sauce.",
+      "price": "$15.00",
+      "category": "speciality"
+    },
+    {
+      "id": "14",
+      "name": "Penne Vodka Pie",
+      "description": "White pizza & penne pasta in vodka sauce on top.",
+      "price": "$15.00",
+      "category": "speciality"
+    }
+  ]
+}

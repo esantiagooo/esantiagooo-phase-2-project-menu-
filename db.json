@@ -104,6 +104,13 @@
       "description": "White pizza & penne pasta in vodka sauce on top.",
       "price": "$15.00",
       "category": "speciality"
+    },
+    {
+      "name": "Nutella Pie",
+      "description": "Chocolate hazelnut spread, topped with Banana",
+      "price": "$16",
+      "category": "sweet",
+      "id": "nQ-_08T"
     }
   ]
 }

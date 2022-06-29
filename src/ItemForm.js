@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ItemForm(){
+function ItemForm({onAddItem}){
     const [name, setName] = useState("")
     const [description, setDescription] = useState("")
     const [price, setPrice] = useState("")
@@ -23,7 +23,7 @@ function ItemForm(){
             body: JSON.stringify(itemInfo)
         })
         .then((r)=> r.json())
-        .then((newItem)=> console.log(newItem))
+        .then((newItem)=> onAddItem(newItem))
     }
     return (
         <form className="NewItem" onSubmit={handleSubmit}>

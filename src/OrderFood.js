@@ -4,12 +4,12 @@ import ItemForm from "./ItemForm";
 
 function OrderFood(){
     const[filterBy, setFilterBy]= useState("All")
-    const[menu, setMenu] = useState([])
+    const[menuItem, setMenuItem] = useState([])
 
 useEffect(()=>{
     fetch("http://localhost:3000/Pizza")
     .then((r)=> r.json())
-    .then((data) => setMenu(data))
+    .then((menuItem) => setMenuItem(menuItem))
     .catch(err => console.log('hi'))
 },[])
 
@@ -18,9 +18,9 @@ function handleFilterBy(category){
 }
 
 function handleAddItem(newProduct){
-    setMenu(...menu, newProduct )
+    setMenuItem([...menuItem, newProduct ])
 }
-const itemsToDisplay = menu.filter((item)=>{
+const itemsToDisplay = menuItem.filter((item)=>{
     if(filterBy === "All"){
         return true
     }else{

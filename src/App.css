@@ -19,3 +19,12 @@ h1{
   padding: 1em;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.block{
+  background-color: firebrick; 
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.la-cuca-name{
+  color: white
+}

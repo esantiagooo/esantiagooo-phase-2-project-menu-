@@ -2,8 +2,8 @@ import React from "react";
 
 function Header(){
     return (
-    <div>
-        <h1>La CuCa Pizzeria</h1>
+    <div className="block">
+        <h1 className="la-cuca-name">La CuCa Pizzeria</h1>
     </div>
     )
 }

@@ -29,13 +29,13 @@ const itemsToDisplay = menuItem.filter((item)=>{
 })
 
     return(
-        <div>
+        <main   className="col-2">
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <ItemForm onAddItem={handleAddItem} />
 
-            <h1>I will add something later</h1>
+            <h1 className="Food-title">Menu</h1>
                 <div className="item-container">
-                  <ul>{itemsToDisplay.map((item) =>(
+                  <ul className="row">{itemsToDisplay.map((item) =>(
                   <div key={item.id}>
                           <div className= "card" key={item.id}>
                               <h2>{item.name}</h2>
@@ -47,7 +47,7 @@ const itemsToDisplay = menuItem.filter((item)=>{
                   </div>
                   ))}</ul>  
                 </div>
-        </div>
+        </main>
     )
 }
 

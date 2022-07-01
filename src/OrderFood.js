@@ -41,6 +41,7 @@ const itemsToDisplay = menuItem.filter((item)=>{
                               <h2>{item.name}</h2>
                               <p>{item.description}</p>
                               <p>{item.price}</p>
+                              <button>Add to cart</button>
                           </div>
                     
                   

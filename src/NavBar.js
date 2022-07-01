@@ -12,6 +12,7 @@ const linkStyles ={
     fontWeight: "bold",
     fontSize: 16,
     textAlign: "center",
+    borderRadius: "0.25rem",
 
 }
 
@@ -19,9 +20,8 @@ function NavBar(){
     return (
     <div>
       <NavLink to ="/" exact style={linkStyles} activeStyle={{background: "firebrick",}} >Home </NavLink>
-      <NavLink to ="/about" exact style={linkStyles} activeStyle={{background: "firebrick",}} > About </NavLink>
       <NavLink to ="/orderfood" exact style={linkStyles} activeStyle={{background: "firebrick",}} >OrderFood</NavLink>
-      {/* <NavLink to ="/actors"  exact   style={linkStyles} activeStyle={{background: "lightgreen",}} > Actors</NavLink> */}
+      <NavLink to ="/cart" exact style={linkStyles} activeStyle={{background: "firebrick",}} > Cart </NavLink>
 
     </div>
     )

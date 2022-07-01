@@ -3,7 +3,7 @@ import React from 'react';
 import {Route, Switch} from "react-router-dom"
 import NavBar from './NavBar';
 import Home from './Home';
-import About from './About';
+import About from './Cart';
 import OrderFood from './OrderFood';
 import Header from './Header';
 
@@ -18,7 +18,7 @@ function App() {
     <Header/> 
     <NavBar/>
     <Switch>
-      <Route  exact path="/about">
+      <Route  exact path="/cart">
         <About/>
       </Route>
       <Route exact path= "/orderfood">

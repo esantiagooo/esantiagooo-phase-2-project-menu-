@@ -1,10 +1,12 @@
 import React, { useEffect, useState} from "react";
 import Filter from "./Filter";
 import ItemForm from "./ItemForm";
+import ShoppingCart from "./ShoppingCart";
 
 function OrderFood(){
     const[filterBy, setFilterBy]= useState("All")
     const[menuItem, setMenuItem] = useState([])
+    const[cartItems, setCartItem] = useState([])
 
 useEffect(()=>{
     fetch("http://localhost:3000/Pizza")
@@ -33,7 +35,7 @@ const itemsToDisplay = menuItem.filter((item)=>{
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <ItemForm onAddItem={handleAddItem} />
 
-            <h1 className="Food-title">Menu</h1>
+            <h1 className="Food-title">Menu</h1> <ShoppingCart cartItems={cartItems}/>
                 <div className="item-container">
                   <ul className="row">{itemsToDisplay.map((item) =>(
                   <div key={item.id}>
@@ -41,7 +43,7 @@ const itemsToDisplay = menuItem.filter((item)=>{
                               <h2>{item.name}</h2>
                               <p>{item.description}</p>
                               <p>{item.price}</p>
-                              <button>Add to cart</button>
+                              <button className="button">Add to cart</button>
                           </div>
                     
                   

@@ -45,3 +45,16 @@ h1{
 .col-2{
   flex: 2;
 }
+.button{
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: gold;
+  width: 100%;
+  cursor: pointer;
+  width: 120px;
+  margin: auto;
+  font-weight: bold;
+  
+}

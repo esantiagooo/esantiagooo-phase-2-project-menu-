@@ -2,15 +2,11 @@ h1{
   text-align: center;
   font-style: italic;
 }
-/* .Food-title{
+.Food-title{
   text-align: center;
   font-style: normal;
-  padding: 8px;
-  margin: 0.5rem;
-  width: 300px;
-  border-radius: 0.5rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-} */
+  border-bottom: 6px solid #404040;
+}
 .item-container{
   display: flex;
   flex-direction: column;
@@ -86,4 +82,7 @@ h1{
   font-size: small;
   font-weight: bold;
   border-style:groove ;
+}
+.home{
+  border-bottom: 6px solid #404040;
 }

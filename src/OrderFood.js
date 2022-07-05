@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from "react";
 import Filter from "./Filter";
 import ItemForm from "./ItemForm";
-import ShoppingCart from "./ShoppingCart";
+
 
 function OrderFood({cartItems, setCartItems}){
     const[filterBy, setFilterBy]= useState("All")
@@ -40,9 +40,9 @@ const itemsToDisplay = menuItem.filter((item)=>{
 
     return(
         <main>
+            <h2 className="Food-title">Menu</h2> 
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <ItemForm onAddItem={handleAddItem} />
-            <h2 className="Food-title">Menu</h2> <ShoppingCart cartItems={cartItems}/>  
 
            
                 <div className="item-container">

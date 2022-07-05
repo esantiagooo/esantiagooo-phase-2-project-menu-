@@ -27,14 +27,17 @@ function ItemForm({onAddItem}){
     }
     return (
         <form className="NewItem" onSubmit={handleSubmit}>
-            <label  htmlFor="items name">Item's name:</label>
+            <div>
+            <label className="item-form" htmlFor="items name">Item's name: </label>
             <input type="text" name ="name" value={name} onChange={(e)=>setName(e.target.value)}></input>
-            <label  htmlFor="items description">Description</label>
+            </div>
+            <div>
+            <label className="item-form" htmlFor="items description"> Description:</label>
             <input  type="text" name="description" value={description} onChange={(e)=>setDescription(e.target.value)} ></input>
-            <label  htmlFor="items price">Item's price:</label>
-            <input  type="text" name="price" value={price} onChange={(e)=>setPrice(e.target.value)} ></input>
-             <label  htmlFor="items name">Category:</label>
-            <select name ="category" value={category} onChange={(e)=>setCategory(e.target.value)}>
+            </div>
+            <div>
+            <label className="item-form" htmlFor="items name">Category:</label>
+             <select name ="category" value={category} onChange={(e)=>setCategory(e.target.value)}>
                 <option value="Produce">Add by category</option>
                 <option value="classic">Classic</option>
                 <option value="speciality">Speciality</option>
@@ -42,6 +45,9 @@ function ItemForm({onAddItem}){
             </select>
 
             <button type="submit"> Add to menu</button>
+            </div>
+            
+
 
         </form>
     )

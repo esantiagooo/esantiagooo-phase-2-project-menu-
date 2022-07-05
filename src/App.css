@@ -67,4 +67,11 @@ h1{
 }
 .Empty-cart{
   font-weight: bold;
+  padding: 12px;
+  margin: "0 8px 8px";
+  background: gainsboro;
+  width: 140px;
+  border-radius: 0.5rem ;
+  font-size: large;
+  text-align: center;
 }

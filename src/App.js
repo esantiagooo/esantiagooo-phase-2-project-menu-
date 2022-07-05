@@ -1,9 +1,9 @@
 import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import {Route, Switch} from "react-router-dom"
 import NavBar from './NavBar';
 import Home from './Home';
-import About from './Cart';
+import Cart from './Cart';
 import OrderFood from './OrderFood';
 import Header from './Header';
 
@@ -12,6 +12,10 @@ import Header from './Header';
 
 
 function App() {
+  const[cartItems, setCartItems] = useState([])
+  
+
+  
 
   return (
     <div>
@@ -19,10 +23,10 @@ function App() {
     <NavBar/>
     <Switch>
       <Route  exact path="/cart">
-        <About/>
+        <Cart cartItems={cartItems}  />
       </Route>
       <Route exact path= "/orderfood">
-        <OrderFood/>
+        <OrderFood cartItems={cartItems} setCartItems={setCartItems} />
       </Route>
       <Route exact path ="/">
         <Home/>

@@ -3,16 +3,15 @@ import Filter from "./Filter";
 import ItemForm from "./ItemForm";
 import ShoppingCart from "./ShoppingCart";
 
-function OrderFood(){
+function OrderFood({cartItems, setCartItems}){
     const[filterBy, setFilterBy]= useState("All")
     const[menuItem, setMenuItem] = useState([])
-    const[cartItems, setCartItem] = useState([])
 
 useEffect(()=>{
     fetch("http://localhost:3000/Pizza")
     .then((r)=> r.json())
     .then((menuItem) => setMenuItem(menuItem))
-    .catch(err => console.log('hi'))
+    .catch(err => console.log('check if database is running'))
 },[])
 
 function handleFilterBy(category){
@@ -21,6 +20,15 @@ function handleFilterBy(category){
 
 function handleAddItem(newProduct){
     setMenuItem([...menuItem, newProduct ])
+}
+function addToCart(cartItem){
+    const item = {}
+    const parentDiv = cartItem.target.parentNode
+    item.name = parentDiv.querySelector(".itemName").textContent
+    item.description = parentDiv.querySelector(".itemDescription").textContent
+    item.price = parentDiv.querySelector(".itemPrice").textContent
+    cartItems.push(item)
+    setCartItems(cartItems)
 }
 const itemsToDisplay = menuItem.filter((item)=>{
     if(filterBy === "All"){
@@ -31,19 +39,20 @@ const itemsToDisplay = menuItem.filter((item)=>{
 })
 
     return(
-        <main   className="col-2">
+        <main>
             <Filter category={filterBy} onCategoryChange={handleFilterBy}/>
             <ItemForm onAddItem={handleAddItem} />
+            <h2 className="Food-title">Menu</h2> <ShoppingCart cartItems={cartItems}/>  
 
-            <h1 className="Food-title">Menu</h1> <ShoppingCart cartItems={cartItems}/>
+           
                 <div className="item-container">
                   <ul className="row">{itemsToDisplay.map((item) =>(
                   <div key={item.id}>
                           <div className= "card" key={item.id}>
-                              <h2>{item.name}</h2>
-                              <p>{item.description}</p>
-                              <p>{item.price}</p>
-                              <button className="button">Add to cart</button>
+                              <h2 className="itemName">{item.name}</h2>
+                              <p className="itemDescription">{item.description}</p>
+                              <p className="itemPrice">{item.price}</p>
+                              <button className="button" onClick={(e)=> addToCart(e)}>Add to cart</button>
                           </div>
                     
                   

@@ -6,6 +6,7 @@ function Cart({cartItems}){
 
     return(
         <div>
+            <h1 className="cart-items">Cart Items</h1>
             {cartItems.length === 0 ? 
             <h2 className="Empty-cart">Cart is empty</h2> : 
             <ul className="row">{cartItems.map((item) =>(

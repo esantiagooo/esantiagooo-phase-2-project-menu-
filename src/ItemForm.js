@@ -36,6 +36,10 @@ function ItemForm({onAddItem}){
             <input  type="text" name="description" value={description} onChange={(e)=>setDescription(e.target.value)} ></input>
             </div>
             <div>
+            <div>
+            <label className="item-form" htmlFor="items price" > price: </label>
+            <input  type="text" name="price"  value={price} onChange={(e)=>setPrice(e.target.value)} ></input>
+            </div>    
             <label className="item-form" htmlFor="items name">Category:</label>
              <select name ="category" value={category} onChange={(e)=>setCategory(e.target.value)}>
                 <option value="Produce">Add by category</option>

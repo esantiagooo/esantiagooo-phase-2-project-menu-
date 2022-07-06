@@ -111,6 +111,13 @@
       "price": "$16",
       "category": "sweet",
       "id": "nQ-_08T"
+    },
+    {
+      "name": "Carmel Apple Pie",
+      "description": " dessert pizza combines a crispy PB cookie crust, a fluffy caramel vanilla frosting, thinly sliced Granny Smith apples and… Snickers",
+      "price": "$16",
+      "category": "sweet",
+      "id": "0VJDwMU"
     }
   ]
 }

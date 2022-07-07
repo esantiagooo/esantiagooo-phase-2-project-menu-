@@ -39,10 +39,7 @@ function ItemForm({onAddItem}){
             setPrice={setPrice}
             setCategory={setCategory}
             />
-           
-            
-
-            </>
+         </>
         
     )
 }

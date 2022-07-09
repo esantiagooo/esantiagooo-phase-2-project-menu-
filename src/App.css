@@ -89,3 +89,6 @@ h1{
 .cart-items{
   border-bottom: 6px solid #404040;
 }
+.itemIndex{
+  display: none;
+}

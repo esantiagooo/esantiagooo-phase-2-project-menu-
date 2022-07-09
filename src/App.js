@@ -23,7 +23,7 @@ function App() {
     <NavBar/>
     <Switch>
       <Route  exact path="/cart">
-        <Cart cartItems={cartItems}  />
+        <Cart cartItems={cartItems} setCartItems={setCartItems} />
       </Route>
       <Route exact path= "/orderfood">
         <OrderFood cartItems={cartItems} setCartItems={setCartItems} />

@@ -1,3 +1,4 @@
+La CuCa Pizzeria Menu is a React application that allows the user to add items to the empty shopping cart. As an added feature the user has the freedom of adding a new item to the existing menu and including that item in the shopping cart. Finally the user has the choice of removing that item from their shopping cart. For familiarity, I built my own API complied with resources that I believed were important.
 
 # Getting Started with Create React App
 
